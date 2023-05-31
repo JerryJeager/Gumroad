@@ -1,0 +1,10 @@
+$breakpoints: (
+    "lg": 720px,
+    "xlg": 1024px
+);
+
+@mixin large {
+    @media screen and (min-width: map-get($breakpoints, "lg")) {
+        @content;
+    }
+}

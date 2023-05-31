@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.first-div {
+  background-color: red;
+  height: 50vh;
+  width: 30%;
+}
+@media screen and (min-width: 720px) {
+  .first-div {
+    background-color: blue;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.4rem;
+  height: auto;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid black;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+header.shownNav {
+  background-color: black;
+  height: 100vh;
+  align-items: start;
+}
+header.shownNav h1 {
+  color: white;
+}
+header .hamburger div {
+  height: 0.2rem;
+  width: 35px;
+  margin-top: 0.3rem;
+  background-color: black;
+}
+header .hamburger.clicked {
+  padding-top: 0.6rem;
+}
+header .hamburger.clicked div:first-child {
+  transition: 0.4s;
+  background-color: white;
+  transform: rotate(-405deg) translate(-3.5px, 3px);
+}
+header .hamburger.clicked div:nth-child(2) {
+  transition: 0.4s;
+  background-color: white;
+  transform: rotate(405deg) translate(-3.5px, -3px);
+}
+header .nav-contents {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 0.12rem solid #ddd;
+}
+header .nav-contents p {
+  color: white;
+  font-size: 1.2rem;
+}
+header .nav-contents div {
+  padding-left: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+header .nav-contents div div {
+  margin-top: 1.2rem;
+}
+header .nav-contents.shownNavContents {
+  transition: 0.4s;
+  top: 10%;
+}
