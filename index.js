@@ -7,3 +7,4 @@ hamburger.addEventListener('click', () => {
     header.classList.toggle("shownNav")
     navContents.classList.toggle("shownNavContents")
 })
+
