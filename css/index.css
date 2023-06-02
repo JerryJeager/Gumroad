@@ -123,3 +123,13 @@ header .nav-contents.shownNavContents {
   border: none;
   font-size: 1.2rem;
 }
+.hero .hero-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 1.9rem;
+  background-color: #ffc900;
+}
+.hero .hero-2 img {
+  width: 100%;
+}
