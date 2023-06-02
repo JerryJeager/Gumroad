@@ -6,3 +6,22 @@
     margin: 0;
     font-family: 'Wix Madefor Display', sans-serif;
 }
+
+$bottomBorder: .2rem solid black;
+
+// colors
+
+$pink: #ff90e8;
+$yellow: #ffc900;
+$violet: #b23386;
+
+// illustration-info styling
+@mixin illustrationInfo{
+    background-color: white;
+    border-radius: 5px;
+    padding: .3em;
+    font-size: .9rem;
+    font-weight: 700;
+    border: $bottomBorder;
+    transform: translateY(20px);
+}

@@ -11,6 +11,7 @@
     }
 }
 
+
 header{
     
     display: flex;
@@ -21,7 +22,7 @@ header{
     padding-top: .4rem;
     height: auto;
     padding-bottom: 1rem;
-    border-bottom: .2rem solid black;
+    border-bottom: $bottomBorder;
     
 
     a{
@@ -76,6 +77,9 @@ header{
         p{
             color: white;
             font-size: 1.2rem;
+            &:hover{
+                color: $pink;
+            }
         }
         div{
             padding-left: 1.3rem;
@@ -101,10 +105,11 @@ header{
         margin: 0 auto;
     }
     .hero-1{
-        background-color: #ff90e8;
+        background-color: $pink;
         padding: 1.8rem 2.4rem 2rem 2.4rem;
         color: black;
         text-align: center;
+        border-bottom: $bottomBorder;
         h2{
             font-weight: 900;
             font-size: 2.7rem;
@@ -130,9 +135,98 @@ header{
         justify-content: center;
         align-items: center;
         padding: 2.4rem 1.9rem;
-        background-color: #ffc900;
+        background-color: $yellow;
+        border-bottom: $bottomBorder;
         img{
             width: 100%;
         }
+    }
+}
+
+.ideas{
+    display: none;
+    .ideas-txt{
+        padding: 2.4rem 1.9rem;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        text-align: center;
+        font-weight: 900;
+        border-bottom: $bottomBorder;
+    }
+    .ideas-loop-container{
+        background-color: $yellow;
+        padding: 2.4rem 1.9rem;
+    }
+    .ideas-loop{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        flex-direction: column;
+        border: .2rem solid black;
+        overflow: visible;
+        .loop-1, .loop-4{
+            align-self: center;
+        }
+    }
+}
+
+.illustration-grid{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    
+    .risks{
+        padding: 2rem 1.9rem;
+        background-color: $violet;
+        border-bottom: $bottomBorder;
+        font-size: 1.9rem;
+    }
+    .bets{
+        padding: 2.7rem 1.9rem;
+        background-color: $pink;
+        font-size: 1.9rem;
+    }
+    .illustration-1{
+        background-color: black;
+        padding: 2rem 1.8rem;
+        .illustration-1-info{
+            @include illustrationInfo;
+            width: 200px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .illustration-2{
+        background-color: $yellow;
+        padding: 2rem 1.8rem;
+        .illustration-2-info{
+            @include illustrationInfo;
+            width: 220px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.features{
+    background-color: white;
+    padding: 2rem 1.8rem;
+    h2{
+        font-weight: 900;
+        font-size: 2.6rem;
+    }
+    p{
+        line-height: 1.6;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+    }
+    a{
+        color: black;
+        // text-decoration: none;
+        font-weight: 600;
+        margin-top: 2rem;
     }
 }

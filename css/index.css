@@ -77,6 +77,9 @@ header .nav-contents p {
   color: white;
   font-size: 1.2rem;
 }
+header .nav-contents p:hover {
+  color: #ff90e8;
+}
 header .nav-contents div {
   padding-left: 1.3rem;
   display: flex;
@@ -103,6 +106,7 @@ header .nav-contents.shownNavContents {
   padding: 1.8rem 2.4rem 2rem 2.4rem;
   color: black;
   text-align: center;
+  border-bottom: 0.2rem solid black;
 }
 .hero .hero-1 h2 {
   font-weight: 900;
@@ -129,7 +133,106 @@ header .nav-contents.shownNavContents {
   align-items: center;
   padding: 2.4rem 1.9rem;
   background-color: #ffc900;
+  border-bottom: 0.2rem solid black;
 }
 .hero .hero-2 img {
   width: 100%;
+}
+
+.ideas {
+  display: none;
+}
+.ideas .ideas-txt {
+  padding: 2.4rem 1.9rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 900;
+  border-bottom: 0.2rem solid black;
+}
+.ideas .ideas-loop-container {
+  background-color: #ffc900;
+  padding: 2.4rem 1.9rem;
+}
+.ideas .ideas-loop {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  flex-direction: column;
+  border: 0.2rem solid black;
+  overflow: visible;
+}
+.ideas .ideas-loop .loop-1, .ideas .ideas-loop .loop-4 {
+  align-self: center;
+}
+
+.illustration-grid {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  text-align: center;
+}
+.illustration-grid .risks {
+  padding: 2rem 1.9rem;
+  background-color: #b23386;
+  border-bottom: 0.2rem solid black;
+  font-size: 1.9rem;
+}
+.illustration-grid .bets {
+  padding: 2.7rem 1.9rem;
+  background-color: #ff90e8;
+  font-size: 1.9rem;
+}
+.illustration-grid .illustration-1 {
+  background-color: black;
+  padding: 2rem 1.8rem;
+}
+.illustration-grid .illustration-1 .illustration-1-info {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.3em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 0.2rem solid black;
+  transform: translateY(20px);
+  width: 200px;
+}
+.illustration-grid .illustration-1 img {
+  width: 100%;
+}
+.illustration-grid .illustration-2 {
+  background-color: #ffc900;
+  padding: 2rem 1.8rem;
+}
+.illustration-grid .illustration-2 .illustration-2-info {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.3em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 0.2rem solid black;
+  transform: translateY(20px);
+  width: 220px;
+}
+.illustration-grid .illustration-2 img {
+  width: 100%;
+}
+
+.features {
+  background-color: white;
+  padding: 2rem 1.8rem;
+}
+.features h2 {
+  font-weight: 900;
+  font-size: 2.6rem;
+}
+.features p {
+  line-height: 1.6;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+.features a {
+  color: black;
+  font-weight: 600;
+  margin-top: 2rem;
 }
