@@ -117,7 +117,6 @@ header{
         }
         p{
             margin-top: 2rem;
-            line-height: 1.6;
         }
         button{
             width: 100%;
@@ -148,7 +147,6 @@ header{
     .ideas-txt{
         padding: 2.4rem 1.9rem;
         font-size: 1.6rem;
-        line-height: 1.6;
         text-align: center;
         font-weight: 900;
         border-bottom: $bottomBorder;
@@ -213,12 +211,12 @@ header{
 .features{
     background-color: white;
     padding: 2rem 1.8rem;
+    border-bottom: $bottomBorder;
     h2{
         font-weight: 900;
         font-size: 2.6rem;
     }
     p{
-        line-height: 1.6;
         margin-top: 2rem;
         font-size: 1.3rem;
         padding-bottom: 2rem;
@@ -228,5 +226,74 @@ header{
         // text-decoration: none;
         font-weight: 600;
         margin-top: 2rem;
+    }
+}
+
+.sell-anything{
+    display: flex;
+    flex-direction: column;
+    border-bottom: $bottomBorder;
+    .sell-anything-img{
+        background-color: $green;
+        img{
+            width: 100%;
+        }
+    }
+    .sell-anything-info{
+        padding: 2rem 1.5rem;
+        h2{
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.2rem;
+            margin-top: .8rem;
+        }
+        ul{
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            margin-left: 1.5rem;
+            line-height: 1.7;
+        }
+    }
+}
+
+.maxParks{
+    background-color: $pink;
+    padding: $basePadding;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    img{
+        width: 100%;
+    }
+    .maxParks-info{
+        .maxParks-info-sub{
+            font-weight: bold;
+            margin-top: .4rem;
+        }
+    }
+}
+
+.sell-to-anyone{
+    display: flex;
+    flex-direction: column;
+    .sell-to-anyone-img{
+        padding: 1.7rem 1.2rem;
+        background-color: black;
+        img{
+            width: 100%;
+        }
+    }
+    .sell-to-anyone-info{
+        padding: $basePadding;
+        h2{
+            font-size: 2.1rem;
+        }
+        p{
+            margin-top: 2rem;
+            font-weight: 600;
+            font-size: 1.14rem;
+        }
     }
 }

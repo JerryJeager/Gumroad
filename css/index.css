@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Wix Madefor Display", sans-serif;
+  line-height: 1.6;
 }
 
 .first-div {
@@ -115,7 +116,6 @@ header .nav-contents.shownNavContents {
 }
 .hero .hero-1 p {
   margin-top: 2rem;
-  line-height: 1.6;
 }
 .hero .hero-1 button {
   width: 100%;
@@ -145,7 +145,6 @@ header .nav-contents.shownNavContents {
 .ideas .ideas-txt {
   padding: 2.4rem 1.9rem;
   font-size: 1.6rem;
-  line-height: 1.6;
   text-align: center;
   font-weight: 900;
   border-bottom: 0.2rem solid black;
@@ -220,13 +219,13 @@ header .nav-contents.shownNavContents {
 .features {
   background-color: white;
   padding: 2rem 1.8rem;
+  border-bottom: 0.2rem solid black;
 }
 .features h2 {
   font-weight: 900;
   font-size: 2.6rem;
 }
 .features p {
-  line-height: 1.6;
   margin-top: 2rem;
   font-size: 1.3rem;
   padding-bottom: 2rem;
@@ -235,4 +234,71 @@ header .nav-contents.shownNavContents {
   color: black;
   font-weight: 600;
   margin-top: 2rem;
+}
+
+.sell-anything {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.2rem solid black;
+}
+.sell-anything .sell-anything-img {
+  background-color: #23a094;
+}
+.sell-anything .sell-anything-img img {
+  width: 100%;
+}
+.sell-anything .sell-anything-info {
+  padding: 2rem 1.5rem;
+}
+.sell-anything .sell-anything-info h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.sell-anything .sell-anything-info p {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+.sell-anything .sell-anything-info ul {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  line-height: 1.7;
+}
+
+.maxParks {
+  background-color: #ff90e8;
+  padding: 2rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.maxParks img {
+  width: 100%;
+}
+.maxParks .maxParks-info .maxParks-info-sub {
+  font-weight: bold;
+  margin-top: 0.4rem;
+}
+
+.sell-to-anyone {
+  display: flex;
+  flex-direction: column;
+}
+.sell-to-anyone .sell-to-anyone-img {
+  padding: 1.7rem 1.2rem;
+  background-color: black;
+}
+.sell-to-anyone .sell-to-anyone-img img {
+  width: 100%;
+}
+.sell-to-anyone .sell-to-anyone-info {
+  padding: 2rem 1.7rem;
+}
+.sell-to-anyone .sell-to-anyone-info h2 {
+  font-size: 2.1rem;
+}
+.sell-to-anyone .sell-to-anyone-info p {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.14rem;
 }

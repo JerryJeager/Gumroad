@@ -5,15 +5,18 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Wix Madefor Display', sans-serif;
+    line-height: 1.6;
 }
 
 $bottomBorder: .2rem solid black;
+$basePadding: 2rem 1.7rem;
 
 // colors
 
 $pink: #ff90e8;
 $yellow: #ffc900;
 $violet: #b23386;
+$green: #23a094;
 
 // illustration-info styling
 @mixin illustrationInfo{
